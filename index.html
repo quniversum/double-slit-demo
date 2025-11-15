@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Double-Slit Experiment Simulator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="logo.JPG" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>The Double-Slit Experiment</h1>
+      <p class="subtitle">
+        Witness the core mystery of quantum physics. Particles behave like
+        waves... until you look at them.
+      </p>
+
+      <div class="simulator-container">
+        <canvas id="experimentCanvas" width="800" height="400"></canvas>
+      </div>
+
+      <div class="controls">
+        <div class="control-group">
+          <button id="fireOneBtn">Fire 1 Electron</button>
+          <button id="fireThousandBtn">Fire 1000 Electrons</button>
+          <button id="clearBtn">Reset</button>
+        </div>
+        <div class="control-group detector">
+          <label for="detectorToggle">Add Detector at Slits:</label>
+          <input type="checkbox" id="detectorToggle" class="toggle" />
+          <label for="detectorToggle">Toggle</label>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

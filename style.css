@@ -1,0 +1,97 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+.main-container {
+  max-width: 800px;
+}
+h1 {
+  font-size: 2.5em;
+  color: #00ffff; /* Cyan for a futuristic feel */
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+}
+.subtitle {
+  font-size: 1.2em;
+  color: #b0b0b0;
+  margin-bottom: 30px;
+}
+.simulator-container {
+  background-color: #000;
+  border: 1px solid #00ffff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2a2a;
+  padding: 15px;
+  border-radius: 8px;
+}
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 0 5px;
+  transition: background-color 0.2s;
+}
+button:hover {
+  background-color: #0056b3;
+}
+#clearBtn {
+  background-color: #dc3545;
+}
+#clearBtn:hover {
+  background-color: #a71d2a;
+}
+.detector {
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+}
+.toggle {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.toggle + label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 25px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  margin-left: 10px;
+}
+.toggle + label:after {
+  content: "";
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+.toggle:checked + label {
+  background: #00ffff;
+}
+.toggle:checked + label:after {
+  left: calc(100% - 2.5px);
+  transform: translateX(-100%);
+}
