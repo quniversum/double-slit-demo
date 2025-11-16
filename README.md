@@ -1,6 +1,7 @@
 # The Double-Slit Experiment Simulator
 
 An interactive simulator that visually demonstrates the core mystery of quantum mechanics: wave-particle duality and the observer effect.
+[➡️ View the Live Demo](https://kardashev-explainer.netlify.app/)
 ---
 
 ## The Concept
